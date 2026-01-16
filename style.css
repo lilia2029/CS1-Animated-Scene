@@ -38,8 +38,10 @@ body {
 }
 #clock{
   position: absolute; 
+  left:110px;
+  bottom: 390px;
   font-size: 50px; 
-  
+
 }
 /*<img id="minnie"src="Minnie_Mickey_s_Surprise_Party-removebg-preview.png" width="400px">
   <img id="mickey" src="e71a26abf4effd884b6cec7e6907453c-removebg-preview (1).png" width="400px"> (put in container for mickey + minnie batting eyes)*/
