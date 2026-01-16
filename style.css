@@ -1,1 +1,45 @@
+html, body {
+ height: 100%;
+ width: 100%;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ background-image: url("https://wallpaper.dog/large/20552168.jpg");
+ background-size: cover;
+}
+#scene-description {
+ width: 600px;
+ margin: 20px auto;
+ text-align: center;
+ font-family: "Trebuchet MS";
+ font-size: 0.8em;
+ color: white;
+}
+#scene-container {
+ width: 600px;
+ height: 400px;
+ margin: auto;
+ border: 5px solid black;
+ background: url('sleeproom.png');
+ background-color:rgba(255, 248, 203, 0.845);
+ background-size: cover;
+ background-position: -30px;
+ overflow: hidden; /* contain objects "on-screen" */
+}
+#minnie{
 
+}
+#mad-daisy{
+    position:relative;
+    top: 120px;
+    left: -60px;
+}
+#clock{
+  position: absolute; 
+  font-size: 50px; 
+  
+}
+/*<img id="minnie"src="Minnie_Mickey_s_Surprise_Party-removebg-preview.png" width="400px">
+  <img id="mickey" src="e71a26abf4effd884b6cec7e6907453c-removebg-preview (1).png" width="400px"> (put in container for mickey + minnie batting eyes)*/
