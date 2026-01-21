@@ -75,17 +75,14 @@ body {
   position: absolute;
   top: 230px;
   left: 360px;
-  animation: open 5s infinite ease-in-out;
+  animation: open 10s infinite ease-in;
   transform: skew(-10deg);
 }
 @keyframes open{
-0%{
-  opacity: 0;
-}
-50%{ opacity: 0.5;}
-100%{
-  opacity: 1;
-}
+0%{opacity: 1;}
+50%{ opacity: 1;}
+75%{opacity: 1;}
+100%{ opacity: 0;}
 }
 /*<img id="minnie"src="Minnie_Mickey_s_Surprise_Party-removebg-preview.png" width="400px">
   <img id="mickey" src="e71a26abf4effd884b6cec7e6907453c-removebg-preview (1).png" width="400px"> (put in container for mickey + minnie batting eyes)*/
