@@ -35,13 +35,57 @@ body {
     position:relative;
     top: 120px;
     left: -60px;
+    animation: move-daisy 10s infinite ease-in-out;
 }
 #clock{
   position: absolute; 
   left:110px;
   bottom: 390px;
   font-size: 50px; 
-
+  animation: move-emoji 10s infinite ease-in-out;
+  display: inline-block;
+}
+@keyframes move-emoji{
+  0%{
+    transform: rotate(0deg) translate(10px, -10px);
+  }
+  50%{
+    transform: rotate(180deg) translate(0px, -20px);
+  }
+  100%{
+    transform: rotate(360deg) translate(120px, -110px);
+  }
+}
+@keyframes move-daisy{
+  0%{
+    transform:skew(0deg)
+  }
+  40%{
+    transform:skew(30deg)
+  }
+  100%{
+    transform:skew(0deg)
+  }
+}
+#lid{
+  background: rgb(189, 197, 170);
+  height:40px;
+  width: 25px;
+  border-radius: 100%;
+  position: absolute;
+  top: 230px;
+  left: 360px;
+  animation: open 5s infinite ease-in-out;
+  transform: skew(-10deg);
+}
+@keyframes open{
+0%{
+  opacity: 0;
+}
+50%{ opacity: 0.5;}
+100%{
+  opacity: 1;
+}
 }
 /*<img id="minnie"src="Minnie_Mickey_s_Surprise_Party-removebg-preview.png" width="400px">
   <img id="mickey" src="e71a26abf4effd884b6cec7e6907453c-removebg-preview (1).png" width="400px"> (put in container for mickey + minnie batting eyes)*/
