@@ -29,7 +29,14 @@ body {
  overflow: hidden; /* contain objects "on-screen" */
 }
 #minnie{
-
+position:absolute;
+top: 110px;
+left: 90px;
+}
+#mickey{
+  position:absolute;
+  top:100px;
+  left:350px;
 }
 #mad-daisy{
     position:relative;
@@ -43,28 +50,35 @@ body {
   bottom: 390px;
   font-size: 50px; 
   animation: move-emoji 10s infinite ease-in-out;
+  /* animation-fill-mode: backwards;*/
   display: inline-block;
 }
 @keyframes move-emoji{
   0%{
     transform: rotate(0deg) translate(10px, -10px);
   }
-  50%{
+  25%{
     transform: rotate(180deg) translate(0px, -20px);
   }
-  100%{
+  50%{
     transform: rotate(360deg) translate(120px, -110px);
+  }
+  90%{
+    transform: rotate(360deg) translate(120px, -110px);
+  }
+  100%{
+    transform: rotate(360deg) translate(0px, 0px);
   }
 }
 @keyframes move-daisy{
   0%{
-    transform:skew(0deg)
+    transform:skew(0deg);
   }
-  40%{
-    transform:skew(30deg)
+  30%{
+    transform:skew(30deg);
   }
-  100%{
-    transform:skew(0deg)
+  50%{
+    transform:skew(0deg);
   }
 }
 #lid{
@@ -80,9 +94,7 @@ body {
 }
 @keyframes open{
 0%{opacity: 1;}
-50%{ opacity: 1;}
-75%{opacity: 1;}
-100%{ opacity: 0;}
+25%{ opacity: 1;}
+30%{opacity: 1;}
+50%{ opacity: 0;}
 }
-/*<img id="minnie"src="Minnie_Mickey_s_Surprise_Party-removebg-preview.png" width="400px">
-  <img id="mickey" src="e71a26abf4effd884b6cec7e6907453c-removebg-preview (1).png" width="400px"> (put in container for mickey + minnie batting eyes)*/
