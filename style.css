@@ -28,16 +28,6 @@ body {
  background-position: -30px;
  overflow: hidden; /* contain objects "on-screen" */
 }
-#minnie{
-position:absolute;
-top: 110px;
-left: 90px;
-}
-#mickey{
-  position:absolute;
-  top:100px;
-  left:350px;
-}
 #mad-daisy{
     position:relative;
     top: 120px;
@@ -98,3 +88,13 @@ left: 90px;
 30%{opacity: 1;}
 50%{ opacity: 0;}
 }
+#dream{
+  position: absolute;
+  left:0px;
+  animation: dream 20s infinite ease-out;
+}
+@keyframes dream{
+  0%{transform: scale(60deg);opacity: 1;}
+  50%{transform: scale(0deg); opacity:1;}
+  100%{transform: scale(60deg);opacity:0;}
+  }
