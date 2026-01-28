@@ -91,7 +91,7 @@ body {
 #dream{
   position: absolute;
   left:55px;
-  animation: dream 30s infinite ease-out;
+  animation: dream 20s infinite ease-out;
 }
 #head{
 position: absolute;
